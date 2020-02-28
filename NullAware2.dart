@@ -17,6 +17,9 @@ void main()
   
   print(n);
   print(no);
+  int s;
+  print(s??=100); //-->output print 100 if s is not assigned
+  
 }
 output
 none 
