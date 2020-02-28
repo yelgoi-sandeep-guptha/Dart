@@ -5,6 +5,7 @@ class Num{
 void main()
 {
   var n=Num();
+  // var n; -->none output
   int no;
   if (n!=null)
   {
