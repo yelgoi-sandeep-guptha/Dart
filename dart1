@@ -1,0 +1,37 @@
+//collections are of 3 types
+// lists
+void main() {
+  List name = ['hello', 'world', 'sandeep', 100, 109.2];
+  for (var i in name) {
+    print(i);
+  }
+  var n1 = ['hey', 'siri', 200, 300.456];
+  n1[3] = "guptha";
+  // n1[4]="das";   error out of range
+  for (var i in n1) {
+    print(i);
+  }
+
+  // list with only strings ==> "List<string>"
+  List<String> na = ['hrllo', 'sandeep'];
+  for (String i in na) {
+    print(i);
+  }
+  //list is fixed
+  var n = const['sandeep','Guptha'];
+  // we cant change   n[1]="hey"
+  for(var i in n){
+    print(i);
+  }
+  
+  //n=name    ==> n,name point to same location , if we change the values in the one variable it is reflected in other also
+  
+  
+  //spread operator  n=[...name]  ==>creates to different objects
+  
+  var s=[...name];
+  name[0]="wrong";
+  print(name[0]);
+  print(s[0]);
+  
+}
