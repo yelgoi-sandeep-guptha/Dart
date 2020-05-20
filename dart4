@@ -1,0 +1,21 @@
+// Functions    positonal arguments and named arguments
+
+void main(){
+  print(sum(1,2));
+  print(sum1("sandeep","guptha"));
+  print(sum2(n2:"sandeep ",n1:"Yelgoi"));
+}
+
+dynamic sum1 (var n1,var n2){
+  return n1+n2;
+}
+//    or 
+
+
+// Positional arguments
+dynamic sum (var n1, var n2) => n1 + n2 ;
+
+
+
+// Named Arguments
+dynamic sum2 ({var n1,var n2}) => n1 + n2 ;
