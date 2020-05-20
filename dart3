@@ -1,0 +1,11 @@
+//Third type of collection is ==>Map
+
+void main(){
+  //Map "key-value pair" dict
+  
+  var student = {'name':'Sandeep',
+                'age':22,
+                'email': 'ysandeepguptha3@gmail.com'};
+  
+  print(student['name']);
+}
