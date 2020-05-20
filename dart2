@@ -1,0 +1,32 @@
+//Second type of collection is ==>Set
+
+void main(){
+
+  var elements = {'hydrogen','oxygen'};
+  for ( var i in elements)
+  {
+    print(i);
+  }
+  
+ // Sets will remove duplicates
+  var elements1 = {'hydrogen','oxygen','hydrogen','Hydrogen',100};
+  
+  for ( var i in elements1){
+    print(i);
+  }
+  
+  //To know the run time type ==>VarName.runtimeType
+  print(elements1.runtimeType); //returns String object
+  print(elements.runtimeType); // returns Object
+  
+  var elements2={};// we assumes it as ==>Hashset but It is ==>HashMap
+  print(elements2.runtimeType);//returns HashMap
+  
+  //To avoid this mistake we have to mention datatype
+  
+  var elements3 =<Set>{};
+  print(elements3.runtimeType); //returns dynamic type
+  
+  Set<String> elements4 = {};
+  print(elements4.runtimeType); // returns String type 
+}
