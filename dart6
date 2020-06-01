@@ -1,0 +1,23 @@
+// Getter and setter are of 2 types 1.Default 2.Custom
+
+// 2. Custom Getter and Setter
+
+void main(){
+  Student student2 = new Student();
+  // or  var  student2 = Student();
+
+  student2.percentage = 438 ;
+  print("My percentage is ${student2.percentage}");
+}
+
+class Student {
+  double percent ;
+  
+  void set percentage(double marks){
+    percent = ( marks / 500) * 100 ;
+  }
+  
+  double get percentage{
+    return percent ;
+  }
+} 
