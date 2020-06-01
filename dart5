@@ -1,0 +1,14 @@
+// Getter and setter are of 2 types 1.Default 2.Custom
+
+// 1. Deafult Getter and Setter
+
+void main(){
+  Student student1 = new Student();
+  student1.id = 1241 ;    //Defalut setter
+  student1.name = "Sandeep"; //Default setter
+  print("My Name is ${student1.name} and ID is ${student1.id});   // Default getter
+}
+class Student{
+  int id ; 
+  String name ;
+}
