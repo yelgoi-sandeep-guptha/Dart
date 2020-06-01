@@ -1,0 +1,46 @@
+//Abstract Class and Method
+
+void main(){
+  
+  // var shape = Shape();  cannot be instantiate Abstract class
+  
+  var rectangle = Rectangle();
+  rectangle.draw();
+  
+  var circle = Circle();
+  circle.draw();
+}
+
+
+// Abstract classes cannot be created objects.
+
+// It contains Abstract and Non-Abstract Methods
+
+abstract class Shape {
+  
+  int x;
+  int y;
+  
+  void draw(); //Abstract Method  --> No body
+  
+  void myNormalFuncttion(){
+    print("This is non Abstract Method");
+  }
+
+}
+
+// In normal class we should not define Abstract Methods
+
+class Rectangle extends Shape{
+  
+  void draw(){
+    print("Drawing Rectangle... ");
+  }
+}
+
+  class Circle extends Shape{
+  
+  void draw(){
+    print("Drawing Cirlce... ");
+  }
+  }
