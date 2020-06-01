@@ -1,0 +1,43 @@
+// Inheritance
+
+void main(){
+  var dog1 = Dog();
+  dog1.color = "Black";
+  dog1.breed = "Labrador";
+  dog1.eat();
+  dog1.bark();
+  
+  var cat1 = Cat();
+  cat1.age = 21;
+  cat1.color = "White";
+  cat1.eat();
+  cat1.meow();
+  
+  var animal = Animal();
+  animal.color = "Brown" ;
+  animal.eat();
+  
+}
+
+class Animal{
+  String color ;
+  
+  void eat(){
+    print("Eat");
+  }
+}
+class Dog extends Animal{
+  String breed ;
+  
+  void bark () {
+    print("Bark");
+  }
+}
+
+class Cat extends Animal{
+  int age ;
+  
+  void meow(){
+    print("Meow");
+  }
+}
