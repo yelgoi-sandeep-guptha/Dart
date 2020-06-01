@@ -1,0 +1,30 @@
+// Method Overriding or polymorphism
+
+void main(){
+  
+  var dog = Dog();
+  dog.eat();
+  print("dog.color");
+}
+class Animal{
+  String color = "Brown";
+  
+  void eat(){
+    print("Animal is eating!");
+  }
+}
+
+class Dog extends Animal{
+  String breed ;
+  String color = "Black";   // variable overriding
+  
+  void bark(){
+    print("Dog is Barking!");
+  }
+  
+  // overriding eat mtd
+  void eat(){
+    super.eat();
+    print("Dog is eating!");
+  }
+}
