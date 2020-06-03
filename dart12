@@ -1,0 +1,39 @@
+// Functional Programming 
+
+// 1. Lambda Expression
+
+void main(){
+
+  // Normal Function
+  add(2,3);
+  
+  // Lambda Function
+  // 1. Function add1(int a, int b){//code};
+  var add1 = (int a, int b){
+    var sum = a + b;
+    print(sum);
+  }; // use semicolon for lambda function
+  // Call Lambda function
+  add1(3,4);
+  
+  var add2 = (int a,int b){
+    var sum = a + b;
+    return sum;
+  };
+  print(add2(5,6)); // The function which returns value 
+  
+  
+  // 2. short hand or FAT Array
+  
+  Function add3 = (int a , int b) => print(a+b);
+  add3(7,8);
+  
+  var mul = (int a) => a*4;
+  print(mul(10));
+}
+
+void add(int a, int b){
+  var sum = a + b;
+  print(sum);
+}
+
