@@ -1,0 +1,20 @@
+// Collection
+
+// 2. Growable list
+
+void main(){
+  
+  List<int> list = List(); //Growable list
+  
+  list.add(41);
+  list.add(31);
+  list.add(32);
+  list.add(33);
+  
+  list[3] = 18 ; //update
+  list.remove(32);  //delete
+  list.removeAt(0); //index delete
+  //list.clear();  //delete all
+  
+  
+}
