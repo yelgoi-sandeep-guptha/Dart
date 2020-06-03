@@ -1,0 +1,41 @@
+// Interace
+
+void main(){
+  
+  Remote remote = new Remote();
+  remote.volumeUp();
+  remote.volumeDown();
+  Television tv = new Television();
+  tv.volumeUp();
+  tv.volumeDown();
+}
+
+class Remote{
+  
+  void volumeUp(){
+    print("Volumne is increasing in remote...");
+  }
+  
+  void volumeDown(){
+    print("Volume is decreasing in Remote...");
+  }
+}
+
+/* 
+ In Interface the sub-class should override all the mtds from parent class or bass class  
+
+ Super keyword should not use in sub-class to call base-class mtds.
+
+*/
+class Television implements Remote{
+  
+  void volumeUp(){
+//     super.volumeUp();
+    print("");
+    print("Volume is increasing in Television");
+  }
+  
+  void volumeDown(){
+    print("Volume is decreasing in Television");
+  }
+}
