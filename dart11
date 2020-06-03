@@ -1,0 +1,35 @@
+// Static Methods and Static Variables 
+
+void main(){
+  
+  Circle circle =  new Circle();
+ //    circle.pi; 
+  //   circle.calculateArea();
+  
+  // static mtds and varaibles cannot be accessed through object variable .....
+  
+  // It is accessed through classname
+  print(Circle.pi);
+  Circle.pi = 6.14 ;  // It can be re-inistatized
+  
+  circle.myNormalFunction();
+  
+}
+
+class Circle{
+  
+  /*
+   * 
+   */
+  static double pi = 3.14 ;
+  
+  static void calculateArea(){
+    print("Some code to calculate Area .....");
+  }
+  
+  void myNormalFunction(){
+    Circle.calculateArea();     // From Normal instance methods static methods and variables can be called..
+    print(Circle.pi);
+  }
+  
+}
