@@ -1,0 +1,23 @@
+// Collection
+
+// 1.List ---> fixed length list
+
+void main(){
+  
+  List<int> list = List(5);  // constructor
+  
+  // Initial values in the list are null
+  
+  list[0] = 41;
+  list[1] = 18;
+  list[3] = 32;
+  list[4] = 31;
+  
+  // To delete in fixed length 
+  
+  list[0] = null;
+  
+  // To print all values in the list
+  list.forEach((i) => print(i)); // Lambda function
+  print(list[0]);
+}
