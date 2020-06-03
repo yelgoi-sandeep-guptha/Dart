@@ -1,0 +1,31 @@
+// Closures
+
+void main(){
+  
+  String msg = "Sandeep is awesome";
+  // 1. parent scope
+  Function showMsg = (){
+    msg = " Dart is awesome ";
+    print(msg);
+  };
+  
+  showMsg();
+  
+  
+  // 2. lexical scope   ...outer scope
+  Function talk = (){
+    
+    String msg ="Hi";
+    
+    Function say = (){
+      msg = "Hello";
+      print(msg);
+    };
+    
+    return say;
+  };
+  
+  Function speak = talk();
+  
+  speak(); //talk()  // say()  //"Hello"
+}
