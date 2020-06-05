@@ -1,0 +1,25 @@
+// Sets
+
+void main(){
+  
+  Set<String> countries = Set.from(["USA","INDIA","CHINA"]);  //Method 1
+  countries.add("NEPAL");
+  countries.add("JAPAN");
+  print(countries.contains("INDIA"));
+  countries.addAll(["USA","INDI"]);
+  print(countries);
+  countries.remove("NEPAL");
+  print(countries.isEmpty);
+  print(countries.length);
+  print(countries.isNotEmpty);
+  //countries.clear();
+  
+  Set<int> n = Set();    // Method 2
+  n.add(1);
+  n.add(2);
+  n.add(1);
+  
+  n.forEach((i) => print(i));
+  print("\n");
+  countries.forEach((i) => print(i));
+}
