@@ -1,0 +1,22 @@
+// Callable Class
+
+void main(){
+  
+  var person1 = Person1();
+  person1("Sandeep");
+  
+  var person2 = Person2();
+  var msg = person2("Guptha");
+  print(msg);
+}
+
+class Person1{
+  void call(name){
+    print("Hello this is $name");
+  }
+}
+class Person2{
+  String call(name){
+    return "Hello This is $name";
+  }
+}
