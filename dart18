@@ -1,0 +1,34 @@
+// Map
+
+void main(){
+  
+  Map<String,int> countryCode = { 
+    "USA":1,
+    "INDIA":91,
+    "JAPAn":89
+  };
+  
+  Map<String,String> fruits = Map();
+  
+  fruits["apple"] = "red" ;
+  fruits["Orange"]= "orange";
+  fruits["banana"]= "yellow";
+  
+  // checks the key is present or not
+  print(fruits.containsKey("apple"));
+  print(fruits.containsValue("red"));
+  print(fruits.length);     
+  fruits.remove("banana");
+  fruits.update("apple",(value) => "green");
+  print(fruits.isEmpty);
+  
+  for ( var keys in fruits.keys){
+    print(keys);
+  }
+  
+  for ( var value in fruits.values){
+    print(value);
+  }
+  
+  fruits.forEach((key,value) => print("\n key is $key  Value is $value"));
+}
